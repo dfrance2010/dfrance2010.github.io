@@ -1,4 +1,8 @@
-# dfrance2010.github.io
+# David France ePortfolio
+
+### davidfrance475@gmail.com
 
 
-Site for hosting CS-499 final project
+## Code Review 
+Youtube video covering my code review prior to adding enhancements for my CS-499 final project:
+https://youtu.be/76tEqNTcvFA
