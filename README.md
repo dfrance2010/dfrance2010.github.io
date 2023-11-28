@@ -5,12 +5,12 @@
 
 Put an introduction paragraph here
 
-#### Contents
-1. [Code Review](#code-review)
-2. [Software Development and Design](#software-development-and-design)
-3. [Data Structures and Algorihtms](#data-structures-and-algorithms)
-4. [Databases](#databases)
-5. [Professional Assessment](#professional-assessment)
+<p style="text-align: center;">#### Contents</p>
+<p style="text-align: center;">1. [Code Review](#code-review)</p>
+<p style="text-align: center;">2. [Software Development and Design](#software-development-and-design)</p>
+<p style="text-align: center;">3. [Data Structures and Algorihtms](#data-structures-and-algorithms)</p>
+<p style="text-align: center;">4. [Databases](#databases)</p>
+<p style="text-align: center;">5. [Professional Assessment](#professional-assessment)</p>
 
 ## Code Review 
 
