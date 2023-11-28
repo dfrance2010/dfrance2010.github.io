@@ -1,7 +1,10 @@
-# David France ePortfolio
+# David France 
+#### 702-373-8115
+#### davidfrance475@gmail.com
 
-### davidfrance475@gmail.com
+Put an introduction paragraph here
 
+[1. Code Review](#Code Review)
 
 ## Code Review 
 Youtube video covering my code review prior to adding enhancements for my CS-499 final project:
