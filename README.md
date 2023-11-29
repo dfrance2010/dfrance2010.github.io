@@ -24,21 +24,25 @@ Youtube video covering my code review prior to adding enhancements for my CS-499
 
 For this enhancement, I created the following components:
 1.	**Added login/logout** – this is a security feature to ensure only valid users can access the database and only users with read/write permission can perform create/update/delete operations.   
-    + Added input and login/logout buttons to the dashboard.
-    + Created ‘Users’ collection in database.
-    + Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
-    + Added check_user() and method to animalshelter.py to check if user has permission to login.
-    + Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
-    + Added login and logout callbacks in grazioso_salvare_dashboard.ipynb.
+    * Added input and login/logout buttons to the dashboard.
+    * Created ‘Users’ collection in database.
+    * Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
+    * Added check_user() and method to animalshelter.py to check if user has permission to login.
+    * Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
+    * Added login and logout callbacks in grazioso_salvare_dashboard.ipynb.
 2. **Added ‘Show Advanced Options’ and ‘Delete Animal’ buttons** – this was the first step in adding all CRUD functionality to the dashboard.  
-    +	Created buttons for the dashboard with associated callbacks.
-    + If user has permission, ‘Show Advanced Options’ turns to ‘Hide Advanced Options’ and advanced options are shown. If they don’t have permission a message is shown.
+    *	Created buttons for the dashboard with associated callbacks.
+    * If user has permission, ‘Show Advanced Options’ turns to ‘Hide Advanced Options’ and advanced options are shown. If they don’t have permission a message is shown.
 3.	**Added dropdown filters for refining the data in the view** – this allows users to better interact with the data and find what they are looking for.  
-    +	Added and aligned dropdowns.
-    +	Added callback to filter the data based on the selections.
+    *	Added and aligned dropdowns.
+    *	Added callback to filter the data based on the selections.
 
 
-Put the software development and design stuff here
+These enhancements helped me to meet the following course outcomes:
+1. **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**
+2. **Develop a security mindset to mitigate design flaws and ensure privacy and enhanced security of data and resources**
+3. **Build collaborative environments that enable diverse audiences to support orginazational decision making**
+4. **Design, develop, and deliver profesional-quality communication**
 
 [Back to the top](#contents)
 
