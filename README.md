@@ -49,7 +49,13 @@ These enhancements helped me to meet the following course outcomes:
 ## Data Structures and Algorithms
 
 
-Put the data structures and algorithms stuff here
++ **Improved initial load time** – I updated the initial database query to find only dogs, rather than the entire set, to populate the data table. Dogs are the focus of the business, but users can then load additional animals, or the entire set, if they like.
++ **Created ‘rescue_type’ category for dogs in MongoDB** - This allows for much faster searching of the important 'Rescue Type' radio buttons.
+    * Updated existing database so all dogs that fit a rescue type would be labelled appropriately in their document.
+    * Created __check_rescue_type() private method in animalshelter.py. This algorithm allows for checking any inserted or updated animals to see if they also fit a rescue type and accounts for the fact that some dogs can fit more than one rescue type.
+    * Updated insert() and update() methods in animalshelter.py to check for rescue types before finalizing inserts and updates.
++ **Created indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.
+
 
 [Back to the top](#contents)
 
