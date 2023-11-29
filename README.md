@@ -7,7 +7,7 @@ Put an introduction paragraph here
 
 #### Contents
 1. [Code Review](#code-review)
-2. [Software Engineering and Design](#software-development-and-design)
+2. [Software Engineering and Design](#software-engineering-and-design)
 3. [Data Structures and Algorihtms](#data-structures-and-algorithms)
 4. [Databases](#databases)
 5. [Professional Assessment](#professional-assessment)
