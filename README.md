@@ -17,7 +17,7 @@ Put an introduction paragraph here
 
 ##### Files prior to enchancement:
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)
-[CS340_project2_dashboard.ipynb - Jupyter Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb
+[CS340_project2_dashboard.ipynb - Jupyter Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)
 
 ##### Files after enhancement:
 Add animalshelter.py
