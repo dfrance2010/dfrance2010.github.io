@@ -6,7 +6,7 @@
 Put an introduction paragraph here
 
 #### Contents
-1.[Files](#files)
+1. [Files](#files)
 2. [Code Review](#code-review)
 3. [Software Engineering and Design](#software-engineering-and-design)
 4. [Data Structures and Algorihtms](#data-structures-and-algorithms)
@@ -16,8 +16,7 @@ Put an introduction paragraph here
 ## Files
 
 ##### Files prior to enchancement:
-[animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)
-
+[animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)  
 [CS340_project2_dashboard.ipynb - Jupyter Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)
 
 ##### Files after enhancement:
