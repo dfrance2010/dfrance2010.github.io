@@ -6,11 +6,22 @@
 Put an introduction paragraph here
 
 #### Contents
-1. [Code Review](#code-review)
-2. [Software Engineering and Design](#software-engineering-and-design)
-3. [Data Structures and Algorihtms](#data-structures-and-algorithms)
-4. [Databases](#databases)
-5. [Professional Assessment](#professional-assessment)
+1.[Files](#files)
+2. [Code Review](#code-review)
+3. [Software Engineering and Design](#software-engineering-and-design)
+4. [Data Structures and Algorihtms](#data-structures-and-algorithms)
+5. [Databases](#databases)
+6. [Professional Assessment](#professional-assessment)
+
+## Files
+
+##### Files prior to enchancement:
+[animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)
+[CS340_project2_dashboard.ipynb - Jupyter Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb
+
+##### Files after enhancement:
+Add animalshelter.py
+Add grazio_salvare_dashboard
 
 ## Code Review 
 
