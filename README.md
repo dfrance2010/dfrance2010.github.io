@@ -88,7 +88,7 @@ For this enhancement, I added a login/logout section, dropdown filters for refin
 
 Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<br>
 
 The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for a number of reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions have already solved for this, but it was nice to go through the exercise for myself.
 
