@@ -9,7 +9,7 @@ This page hosts my work for the CS-499 capstone project. For this project we had
 2.	Algorithms and data structure
 3.	Databases
 <br>
-I chose to do all three enhancements on the same artifact – a dashboard for the fictional company, Grazioso Salvare, that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. For each enhancement, I will go over what changes I made and how those changes helped me meet the following course outcomes:
+  I chose to do all three enhancements on the same artifact – a dashboard for the fictional company, Grazioso Salvare, that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. For each enhancement, I will go over what changes I made and how those changes helped me meet the following course outcomes:
 <br>
 
 1. Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science 
