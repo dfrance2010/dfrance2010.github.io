@@ -48,6 +48,8 @@ For this enhancement, I created the following components:
     *	Added and aligned dropdowns.
     *	Added callback to filter the data based on the selections.
 
+Video review of enhancements and code:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 These enhancements helped me to meet the following course outcomes:
 1. **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**
@@ -67,6 +69,8 @@ These enhancements helped me to meet the following course outcomes:
     * Updated insert() and update() methods in animalshelter.py to check for rescue types before finalizing inserts and updates.
 + **Created indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.
 
+Video review of enhancements and code:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cmr1ncEY43Q?si=nEQdCey1zBf5FS15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 [Back to the top](#contents)
 
