@@ -1,10 +1,21 @@
 ## David France
-#### Contact:
+**Contact:**<br>
 davidfrance475@gmail.com  
 702-373-8115
 
 
-Put an introduction paragraph here
+This page hosts my work for the CS-499 capstone project. For this project we had to do three enhancements on previous work, covering the following categories:<br>
+1.	Software design and engineering
+2.	Algorithms and data structure
+3.	Databases
+I chose to do all three enhancements on the same artifact – a dashboard for the fictional company, Grazioso Salvare, that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. For each enhancement, I will go over what changes I made and how those changes helped me meet the following course outcomes:<br>
+1. Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science 
+2. Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts 
+3. Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices (data structures and algorithms) 
+4. Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals (software engineering/design/database) 
+5. Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources<br>
+At the end of each section I have a video showcasing the enhancements in the dashboard, along with a quick review of the code. Closing out each section will be a short reflection on what I learned and what challenges I faced in completing the enhancement.
+
 
 ### Contents
 1. [Files](#files)
@@ -15,6 +26,7 @@ Put an introduction paragraph here
 6. [Professional Assessment](#professional-assessment)
 
 # Files
+Each enhancement was performed on the same artifact. Here are the original code files, followed by the files after all enhancements. Each section goes over what I specifically changed for that enhancement.
 
 **Files prior to enchancement:**<br> 
 
