@@ -72,7 +72,7 @@ Video review of enhancements and code:
 
 [Back to the top](#contents)
 
-## Data Structures and Algorithms
+# Data Structures and Algorithms
 
 
 **Improved initial load time** 
@@ -93,12 +93,11 @@ Video review of enhancements and code:
 
 [Back to the top](#contents)
 
-## Databases 
+# Databases 
 For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons.
 
 
-#### **Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**  
-
+**Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**<br>  
 + Used data validation to ensure only quality data was being inserted/updated. 
     + Created dropdown menus with pre-selected values for ‘animal_type’, ‘breed’, ‘color’, ‘outome_subtype’, ‘outcome_type’, and ‘sex_upon_outcome’
     + Used SingleDatePicker() to ensure user has to select a date for birthdate.
@@ -115,26 +114,26 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
     + Updated update() method to check if a DOB is being updated and doing the appropriate updates if yes.
   
    
-#### **Develop a security mindset:**  
+**Develop a security mindset:**<br>  
 
 + Only users with read/write permissions can access the ‘Advanced Options’ on the dashboard, showing the use of the principle of least privilege. 
 + Data validation protects against injection attacks.
  
-#### **Building collaborative environments:**  
+**Building collaborative environments:**<br>
 
 + Creating a dashboard with complete CRUD functionality allows for all team members of Grazioso Salvare to work with the most up-to-date information available from the database.
 + ‘Advanced Option’ are only shown when read/write users click on the ‘Show Advanced Option’ button. This declutters the view for those just using the read functionality of the dashboard. Further, only one ‘delete’, ‘insert’, or ‘update’ view is available at a time, based on the selected radio button.
 + Ensured to comment the code and use descriptive naming to make it easier for other developers to work with my code.
 
     
-#### **Professional communication:**  
+**Professional communication:**<br>  
 
   + Use of bullets and screencast in narrative to clearly highlight enhancement using both written and oral/visual techniques
 
 
 [Back to the top](#contents)
 
-## Professional Assessment 
+# Professional Assessment 
 
 
 Put the professsional assessment stuff here
