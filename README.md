@@ -33,7 +33,6 @@ Following that, I have a video showcasing the changes in the dashboard, along wi
 3. [Software Engineering and Design](#software-engineering-and-design)
 4. [Data Structures and Algorihtms](#data-structures-and-algorithms)
 5. [Databases](#databases)
-6. [Professional Assessment](#professional-assessment)
 
 # Files
 Each enhancement was performed on the same artifact. Here are the original code files, followed by the files after all enhancements. Each section goes over what I specifically changed for that enhancement.
@@ -78,12 +77,12 @@ For this enhancement, I added a login/logout section, dropdown filters for refin
 + Salting and hashing username/password pairs protects the stored values even if they are accessed.
 + Creating methods for checking users and permissions prevents unauthorized access.
     
-**Build collaborative environments that enable diverse audiences to support orginazational decision making**<br>
+**Build collaborative environments that enable diverse audiences to support organizational decision making**<br>
 
   + Improved functionality of dashboard means Grazioso Salvare employees can better do their jobs.
   + Improved comments and naming conventions in code so anyone can jump in and know what is going on.
 
-**Design, develop, and deliver profesional-quality communication**<br>
+**Design, develop, and deliver professional-quality communication**<br>
 
   + Created written and video narratives to communicate changes.
 
@@ -151,9 +150,3 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
 
 [Back to the top](#contents)
 
-# Professional Assessment 
-
-
-Put the professsional assessment stuff here
-
-[Back to the top](#contents)
