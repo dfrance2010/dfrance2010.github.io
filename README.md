@@ -39,7 +39,7 @@ Youtube video covering my code review prior to adding enhancements for my CS-499
 For this enhancement, I added a login/logout section, dropdown filters for refining the data in the view, and an 'Advanced Options' section with a 'Delete Animal' button. This all works towards improving the use and functionality of the dashboard for the Grazioso Salvare team. Key elements included creating MongoDB collections for users and salt values, then inserting qualified users and their associated read/write permissions by first salting, then hashing the strings. The login and advanced options also included creating check_user() and check_permission() methods in animalshelter.py for security checks. Finally, an backup database was created to hold deleted animals in to save inattentive users from their mistakes. This enhancement helped me to meet the following course outcomes:
 
 
-### **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**
+## **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**
   + Added input and login/logout buttons to the dashboard.
   + Created ‘Users’ collection in database.
   + Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
@@ -47,17 +47,17 @@ For this enhancement, I added a login/logout section, dropdown filters for refin
   + Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
   + Added login and logout callbacks in grazioso_salvare_dashboard.ipynb. 
     
-#### **Develop a security mindset to mitigate design flaws and ensure privacy and enhanced security of data and resources**  
+## **Develop a security mindset to mitigate design flaws and ensure privacy and enhanced security of data and resources**  
   + Principle of least privilege means only users with read/write access can make changes to the database.
   + Salting and hashing username/password pairs protects the stored values even if they are accessed.
   + Creating methods for checking users and permissions prevents unauthorized access.
     
-#### **Build collaborative environments that enable diverse audiences to support orginazational decision making**  
+## **Build collaborative environments that enable diverse audiences to support orginazational decision making**  
   + Improved functionality of dashboard means Grazioso Salvare employees can better do their jobs.
   + Improved comments and naming conventions in code so anyone can jump in and know what is going on.
 
 
-#### **Design, develop, and deliver profesional-quality communication**
+## **Design, develop, and deliver profesional-quality communication**
   + Created written and video narratives to communicate changes.
 
 Video review of enhancements and code:
