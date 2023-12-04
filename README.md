@@ -4,15 +4,17 @@ davidfrance475@gmail.com
 702-373-8115
 
 
-This page hosts my work for the CS-499 capstone project. For this project we had to do three enhancements on previous work, covering the following categories:<br>
+This page hosts my work for the CS-499 capstone project. This project helps demonstrate the computer science technical skills I’ve developed at SNHU. In addition to coursework, my 20 years of high-end experience in the casino and restaurant industries have helped me develop the ability to collaborate in a team environment and communicate to stakeholders. My coursework for this program also demonstrates my ability to take responsibility and hit deadlines in a remote environment. 
+<br>
+For this project we had to do three enhancements on previous work, covering the following categories:
+<br>
 1.	Software design and engineering
 2.	Algorithms and data structure
 3.	Databases
 <br>
 
-I chose to do all three enhancements on the same artifact – a dashboard for the fictional company, Grazioso Salvare, that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. For each enhancement, I will go over what changes I made and how those changes helped me meet the following course outcomes:
+I chose to do all three enhancements on the same artifact – a dashboard for the fictional company, Grazioso Salvare, that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. At the top of the page, you will see the code files pre and post-enhancements. This is followed by a code review prior to starting the work, then the details for each enhancement. For each enhancement, I will go over what changes I made and how those changes helped me meet the following course outcomes:
 <br>
-
 
 1. Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science 
 2. Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts 
@@ -22,7 +24,7 @@ I chose to do all three enhancements on the same artifact – a dashboard for th
 <br>
 
 
-At the end of each section I have a video showcasing the enhancements in the dashboard, along with a quick review of the code. Closing out each section will be a short reflection on what I learned and what challenges I faced in completing the enhancement.
+Following that, I have a video showcasing the changes in the dashboard, along with a quick review of the code. Closing out each section will be a short reflection on what I learned and what challenges I faced in completing the enhancement.
 
 
 ### Contents
