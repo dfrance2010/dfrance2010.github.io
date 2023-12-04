@@ -6,7 +6,7 @@ davidfrance475@gmail.com
 
 Put an introduction paragraph here
 
-#### Contents
+### Contents
 1. [Files](#files)
 2. [Code Review](#code-review)
 3. [Software Engineering and Design](#software-engineering-and-design)
@@ -96,12 +96,12 @@ Video review of enhancements and code:
 For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons.
 
 
-**Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**<br>  
+**Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**<br> 
 + Used data validation to ensure only quality data was being inserted/updated. 
     + Created dropdown menus with pre-selected values for ‘animal_type’, ‘breed’, ‘color’, ‘outome_subtype’, ‘outcome_type’, and ‘sex_upon_outcome’
     + Used SingleDatePicker() to ensure user has to select a date for birthdate.
     + Used geolocator to obtain ‘latitude’ and ‘longitude’ coordinates, with a map so the user can confirm their entry.
-    + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.  
+    + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.
 + Created __animal_dict() method in CS499_milestone4_dashboard.ipynb to create dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
 + Created private methods in animalshelter.py to fill in the fields that can be calculated.
     + __age() - returns a formatted age string in the form of ‘1 day’, ‘2 weeks’, ‘3 years’, etc. 
@@ -114,19 +114,16 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
   
    
 **Develop a security mindset:**<br>  
-
 + Only users with read/write permissions can access the ‘Advanced Options’ on the dashboard, showing the use of the principle of least privilege. 
 + Data validation protects against injection attacks.
  
 **Building collaborative environments:**<br>
-
 + Creating a dashboard with complete CRUD functionality allows for all team members of Grazioso Salvare to work with the most up-to-date information available from the database.
 + ‘Advanced Option’ are only shown when read/write users click on the ‘Show Advanced Option’ button. This declutters the view for those just using the read functionality of the dashboard. Further, only one ‘delete’, ‘insert’, or ‘update’ view is available at a time, based on the selected radio button.
 + Ensured to comment the code and use descriptive naming to make it easier for other developers to work with my code.
 
     
 **Professional communication:**<br>  
-
   + Use of bullets and screencast in narrative to clearly highlight enhancement using both written and oral/visual techniques
 
 
