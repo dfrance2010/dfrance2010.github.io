@@ -1,6 +1,8 @@
-## Contact:
-#### davidfrance475@gmail.com
-#### 702-373-8115
+### David France
+#### Contact:<br>
+
+davidfrance475@gmail.com
+702-373-8115
 
 
 Put an introduction paragraph here
@@ -13,7 +15,7 @@ Put an introduction paragraph here
 5. [Databases](#databases)
 6. [Professional Assessment](#professional-assessment)
 
-## Files
+# Files
 
 ##### Files prior to enchancement: 
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)  
@@ -24,22 +26,20 @@ Put an introduction paragraph here
 [dash_css.py](https://github.com/dfrance2010/CS499/blob/Final/dash_css.py)  
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Final/grazioso_salvare_dashboard.ipynb)
 
-## Code Review 
+# Code Review 
 
 
 Youtube video covering my code review prior to adding enhancements for my CS-499 final project:  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76tEqNTcvFA?si=nYg4x87zR1OLd5L2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 [Back to the top](#contents)
 
-## Software Engineering and Design 
+# Software Engineering and Design 
 
 
-For this enhancement, I created the following components:  
-**Added login/logout** 
+For this enhancement, I added a login/logout section, dropdown filters for refining the data in the view, and an 'Advanced Options' section with a 'Delete Animal' button. This all works towards improving the use and functionality of the dashboard for the Grazioso Salvare team. Key elements included creating MongoDB collections for users and salt values, then inserting qualified users and their associated read/write permissions by first salting, then hashing the strings. The login and advanced options also included creating check_user() and check_permission() methods in animalshelter.py for security checks. Finally, an backup database was created to hold deleted animals in to save inattentive users from their mistakes. This enhancement helped me to meet the following course outcomes:
 
 
-This is a security feature to ensure only valid users can access the database and only users with read/write permission can perform create/update/delete operations.
-
+### **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**
   + Added input and login/logout buttons to the dashboard.
   + Created ‘Users’ collection in database.
   + Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
@@ -47,32 +47,21 @@ This is a security feature to ensure only valid users can access the database an
   + Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
   + Added login and logout callbacks in grazioso_salvare_dashboard.ipynb. 
     
-#### **Added ‘Show Advanced Options’ and ‘Delete Animal’ buttons**
-
-
-This was the first step in adding all CRUD functionality to the dashboard.  
-
-  + Created buttons for the dashboard with associated callbacks.
-  + If user has permission, ‘Show Advanced Options’ turns to ‘Hide Advanced Options’ and advanced options are shown. If they don’t have permission a message is shown.
+#### **Develop a security mindset to mitigate design flaws and ensure privacy and enhanced security of data and resources**  
+  + Principle of least privilege means only users with read/write access can make changes to the database.
+  + Salting and hashing username/password pairs protects the stored values even if they are accessed.
+  + Creating methods for checking users and permissions prevents unauthorized access.
     
-#### **Added dropdown filters for refining the data in the view** 
+#### **Build collaborative environments that enable diverse audiences to support orginazational decision making**  
+  + Improved functionality of dashboard means Grazioso Salvare employees can better do their jobs.
+  + Improved comments and naming conventions in code so anyone can jump in and know what is going on.
 
 
-This allows users to better interact with the data and find what they are looking for.  
-  + Added and aligned dropdowns.
-  + Added callback to filter the data based on the selections.
+#### **Design, develop, and deliver profesional-quality communication**
+  + Created written and video narratives to communicate changes.
 
 Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-These enhancements helped me to meet the following course outcomes:  
-**Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**  
-
-**Develop a security mindset to mitigate design flaws and ensure privacy and enhanced security of data and resources**  
-
-**Build collaborative environments that enable diverse audiences to support orginazational decision making**  
-
-**Design, develop, and deliver profesional-quality communication**  
 
 
 [Back to the top](#contents)
