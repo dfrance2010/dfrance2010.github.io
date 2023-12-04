@@ -93,23 +93,38 @@ Video review of enhancements and code:
 [Back to the top](#contents)
 
 # Data Structures and Algorithms
+For this enhancement I focused on improving the speed of the dashboard. I accomplished this by improving the dashboard in three ways:
++ **Initial load time** – I updated the initial database query to find only dogs, rather than the entire set, to populate the data table. Dogs are the focus of the business, but users can then load additional animals, or the entire set, if they like.
++ **Create ‘rescue_type’ category for dogs in MongoDB** - for the current database, this meant updating dogs that currently meet the criteria for each rescue type, accounting for the fact that some dogs are in more than one category. More importantly, it meant creating an algorithm in animalshelter.py to automatically update dogs that qualify as they are inserted or updated within the database.
++ **Create indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.
 
 
-**Improved initial load time** 
+These changes helped me to meet the following course outcomes:<br>
 
-I updated the initial database query to find only dogs, rather than the entire set, to populate the data table. Dogs are the focus of the business, but users can then load additional animals, or the entire set, if they like.  
+**Design and evaluate computing solutions to solve a problem:**<br> 
++ Created __check_rescue_type() private method in animalshelter.py to solve the problem of automatically updating animals as they are inserted and deleted.
+    + Implemented in insert() method – simple call of the __check_rescue_type() method on the animal being inserted
+    + Implemented in update() method – designed algorithm to handle if the animal ID has changed, if only one animal is being updated using animal ID, or if many animals are being updated. __check_rescue_type() is designed to both add and remove rescue_type classifications, of updated animals as necessary.
+    + Speed of loading all three rescue types one by one was increased by .47 seconds for a 10,000 animal database.
++ Updated initial load of database into the dashboard to solve the problem of a long initial load time.
++ Created indexes in MongoDB database to enhance efficiency of find() method.
+**Use well-founded techniques:**<br>
++ Separated check for rescue type into its own private method.
+    + It doesn’t need to be accessed outside of animalshelter.py.
+    + Allows for use in both insert() and update() methods.
++ Implemented __check_rescue_animal() in update() method to efficiently check all the update possibilities using if-elif-else clause.
+**Building collaborative environments:**<br>
++ Increasing the responsiveness of the database to the data filtering options makes it easier for Grazioso Salvare employees to do their work.
++ Focused on improving comments within animalshelter.py and CS499_milestone3_dashboard.ipynb in order to allow anyone to jump in and understand the code.
+**Professional communication:**
++ Increased quality of communication within code with the use of headers, comments, and descriptive naming conventions.
++ Communication within narrative through both written and oral/screencast. Improved layout by using bullets to accentuate important points.
+ 
 
-
-**Created ‘rescue_type’ category for dogs in MongoDB** - This allows for much faster searching of the important 'Rescue Type' radio buttons.  
-
-   * Updated existing database so all dogs that fit a rescue type would be labelled appropriately in their document.
-   * Created __check_rescue_type() private method in animalshelter.py. This algorithm allows for checking any inserted or updated animals to see if they also fit a rescue type and accounts for the fact that some dogs can fit more than one rescue type.
-   * Updated insert() and update() methods in animalshelter.py to check for rescue types before finalizing inserts and updates.
-    
-**Created indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.  
-
-Video review of enhancements and code:
+Video review of enhancements and code, including side-by-side comparison of speed before and after enhancement:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cmr1ncEY43Q?si=nEQdCey1zBf5FS15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Upon reflection, this was a successful week in terms of both implementing skills I have and developing new ones. I was able to improve the controller and view classes as I said I would and the result was improved loading times, particularly for the rescue type radio buttons. I was also able to do incremental programming by creating a Jupyter Notebook for testing, allowing me to ensure that all my changes to animalshelter.py worked as intended. I developed skills in video editing and continued working on improving my code readability and screencasting/code review. I wouldn’t say I faced any major challenges that I wasn’t able to figure out, which made me feel confident in my ability to deliver on what I say I will.
 
 [Back to the top](#contents)
 
