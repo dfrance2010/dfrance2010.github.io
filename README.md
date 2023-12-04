@@ -36,26 +36,27 @@ Youtube video covering my code review prior to adding enhancements for my CS-499
 
 For this enhancement, I created the following components:  
 **Added login/logout** 
-This is a security feature to ensure only valid users can access the database and only users with read/write permission can perform create/update/delete operations. 
+This is a security feature to ensure only valid users can access the database and only users with read/write permission can perform create/update/delete operations.
 
-    1. Added input and login/logout buttons to the dashboard.
-    2. Created ‘Users’ collection in database.
-    3. Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
-    4. Added check_user() and method to animalshelter.py to check if user has permission to login.
-    5. Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
-    6. Added login and logout callbacks in grazioso_salvare_dashboard.ipynb. 
++ Added input and login/logout buttons to the dashboard.
++ Created ‘Users’ collection in database.
++ Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
++ Added check_user() and method to animalshelter.py to check if user has permission to login.
++ Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
++ Added login and logout callbacks in grazioso_salvare_dashboard.ipynb. 
     
 #### **Added ‘Show Advanced Options’ and ‘Delete Animal’ buttons**
+
 This was the first step in adding all CRUD functionality to the dashboard.  
 
-    1. Created buttons for the dashboard with associated callbacks.
-    2. If user has permission, ‘Show Advanced Options’ turns to ‘Hide Advanced Options’ and advanced options are shown. If they don’t have permission a message is shown.
++ Created buttons for the dashboard with associated callbacks.
++ If user has permission, ‘Show Advanced Options’ turns to ‘Hide Advanced Options’ and advanced options are shown. If they don’t have permission a message is shown.
     
-#### **Added dropdown filters for refining the data in the view**
-This allows users to better interact with the data and find what they are looking for.  
+#### **Added dropdown filters for refining the data in the view** 
 
-    1. Added and aligned dropdowns.
-    2. Added callback to filter the data based on the selections.
+This allows users to better interact with the data and find what they are looking for.  
++ Added and aligned dropdowns.
++ Added callback to filter the data based on the selections.
 
 Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
