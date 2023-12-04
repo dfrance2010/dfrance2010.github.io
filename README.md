@@ -90,6 +90,9 @@ Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
+The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for a number of reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions have already solved for this, but it was nice to go through the exercise for myself.
+
+
 [Back to the top](#contents)
 
 # Data Structures and Algorithms
@@ -129,7 +132,7 @@ Upon reflection, this was a successful week in terms of both implementing skills
 [Back to the top](#contents)
 
 # Databases 
-For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons.
+For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons. While simple, this involved controlling input, adding input validation, adding in the calculated fields, and properly updating calculated fields. Some of the methods bleed over into algorithms and data structures as well, specifically the structure of the documents in MongoDB, and adding in calculated fields to each new or updated document. This enhancement helped me to meet the following course outcomes:
 
 
 **Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**<br> 
@@ -161,6 +164,16 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
     
 **Professional communication:**<br>  
   + Use of bullets and screencast in narrative to clearly highlight enhancement using both written and oral/visual techniques
+
+
+Video covering changes to the dashboard, followed by the code changes:
+
+
+
+In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map in order to properly cite OpenStreetMap. These techniques helped me to ensure strong data validation on input for the MongoDB database. 
+
+My biggest challenge for the enhancement came when I thought I had finished for the week and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard and had everything set up to record the code review, attach to my narrative, and submit. As it turned out, I had not tested as thoroughly as I had thought, my code was riddled with small bugs, and I spent several hours playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how important it is to be thorough and run through all scenarios before declaring the task ‘done’.
+
 
 
 [Back to the top](#contents)
