@@ -1,6 +1,5 @@
-#### David France
+## David France
 #### Contact:<br>
-
 davidfrance475@gmail.com
 702-373-8115
 
