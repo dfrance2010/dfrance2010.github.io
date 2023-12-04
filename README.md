@@ -1,5 +1,5 @@
 ## David France
-#### Contact:<br>
+#### Contact:
 davidfrance475@gmail.com  
 702-373-8115
 
@@ -16,12 +16,12 @@ Put an introduction paragraph here
 
 # Files
 
-##### Files prior to enchancement: 
+**Files prior to enchancement:**<br> 
 
+[animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)   
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)  
-[animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py) 
 
-##### Files after enhancement:  
+**Files after enhancement:**<br> 
 
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Final/animalshelter.py)  
 [dash_css.py](https://github.com/dfrance2010/CS499/blob/Final/dash_css.py)  
