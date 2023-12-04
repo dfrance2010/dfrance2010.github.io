@@ -1,4 +1,4 @@
-### David France
+#### David France
 #### Contact:<br>
 
 davidfrance475@gmail.com
@@ -18,10 +18,12 @@ Put an introduction paragraph here
 # Files
 
 ##### Files prior to enchancement: 
+
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)  
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py) 
 
-##### Files after enhancement:
+##### Files after enhancement:  
+
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Final/animalshelter.py)  
 [dash_css.py](https://github.com/dfrance2010/CS499/blob/Final/dash_css.py)  
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Final/grazioso_salvare_dashboard.ipynb)
@@ -30,6 +32,7 @@ Put an introduction paragraph here
 
 
 Youtube video covering my code review prior to adding enhancements for my CS-499 final project:  
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76tEqNTcvFA?si=nYg4x87zR1OLd5L2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 [Back to the top](#contents)
 
@@ -91,38 +94,37 @@ Video review of enhancements and code:
 For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons.
 
 
-**Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**  
+#### **Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**  
 
-  + Used data validation to ensure only quality data was being inserted/updated. 
-      + Created dropdown menus with pre-selected values for ‘animal_type’, ‘breed’, ‘color’, ‘outome_subtype’, ‘outcome_type’, and ‘sex_upon_outcome’
-      + Used SingleDatePicker() to ensure user has to select a date for birthdate.
-      + Used geolocator to obtain ‘latitude’ and ‘longitude’ coordinates, with a map so the user can confirm their entry.
-      + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.  
-  + Created __animal_dict() method in CS499_milestone4_dashboard.ipynb to create dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
-  + Created private methods in animalshelter.py to fill in the fields that can be calculated.
-      + __age() - returns a formatted age string in the form of ‘1 day’, ‘2 weeks’, ‘3 years’, etc. 
-      + __age_in_weeks() – returns a float representing the age in weeks calculated from the provided DOB to today.
-      + __next_row() – returns highest row value + 1 for newest animal.
-      + __next_id() – returns the highest animal_ID value + 1.
-      + __add_fields() – adds calculated fields to animal dictionary to be inserted. This ensures all fields are populated and are in the correct form for the Dash App data table.
- + Updated insert() method to add all calculated fields prior to checking if animal is a rescue type.
-     + Updated update() method to check if a DOB is being updated and doing the appropriate updates if yes.
++ Used data validation to ensure only quality data was being inserted/updated. 
+    + Created dropdown menus with pre-selected values for ‘animal_type’, ‘breed’, ‘color’, ‘outome_subtype’, ‘outcome_type’, and ‘sex_upon_outcome’
+    + Used SingleDatePicker() to ensure user has to select a date for birthdate.
+    + Used geolocator to obtain ‘latitude’ and ‘longitude’ coordinates, with a map so the user can confirm their entry.
+    + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.  
++ Created __animal_dict() method in CS499_milestone4_dashboard.ipynb to create dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
++ Created private methods in animalshelter.py to fill in the fields that can be calculated.
+    + __age() - returns a formatted age string in the form of ‘1 day’, ‘2 weeks’, ‘3 years’, etc. 
+    + __age_in_weeks() – returns a float representing the age in weeks calculated from the provided DOB to today.
+    + __next_row() – returns highest row value + 1 for newest animal.
+    + __next_id() – returns the highest animal_ID value + 1.
+    + __add_fields() – adds calculated fields to animal dictionary to be inserted. This ensures all fields are populated and are in the correct form for the Dash App data table.
++ Updated insert() method to add all calculated fields prior to checking if animal is a rescue type.
+    + Updated update() method to check if a DOB is being updated and doing the appropriate updates if yes.
   
    
-**Develop a security mindset:**  
+#### **Develop a security mindset:**  
 
-  + Only users with read/write permissions can access the ‘Advanced Options’ on the dashboard, showing the use of the principle of least privilege. 
-  + Data validation protects against injection attacks.
++ Only users with read/write permissions can access the ‘Advanced Options’ on the dashboard, showing the use of the principle of least privilege. 
++ Data validation protects against injection attacks.
+ 
+#### **Building collaborative environments:**  
 
-  + 
-**Building collaborative environments:**  
-
-  + Creating a dashboard with complete CRUD functionality allows for all team members of Grazioso Salvare to work with the most up-to-date information available from the database.
-  + ‘Advanced Option’ are only shown when read/write users click on the ‘Show Advanced Option’ button. This declutters the view for those just using the read functionality of the dashboard. Further, only one ‘delete’, ‘insert’, or ‘update’ view is available at a time, based on the selected radio button.
-  + Ensured to comment the code and use descriptive naming to make it easier for other developers to work with my code.
++ Creating a dashboard with complete CRUD functionality allows for all team members of Grazioso Salvare to work with the most up-to-date information available from the database.
++ ‘Advanced Option’ are only shown when read/write users click on the ‘Show Advanced Option’ button. This declutters the view for those just using the read functionality of the dashboard. Further, only one ‘delete’, ‘insert’, or ‘update’ view is available at a time, based on the selected radio button.
++ Ensured to comment the code and use descriptive naming to make it easier for other developers to work with my code.
 
     
-**Professional communication:**  
+#### **Professional communication:**  
 
   + Use of bullets and screencast in narrative to clearly highlight enhancement using both written and oral/visual techniques
 
