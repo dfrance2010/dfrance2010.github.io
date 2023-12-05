@@ -131,7 +131,7 @@ These changes helped me to meet the following course outcomes:<br>
 + Communication within narrative through both written and oral/screencast. Improved layout by using bullets to accentuate important points.
  
 
-Video review of enhancements and code, including side-by-side comparison of speed before and after enhancement:
+Video review of enhancements and code. Side-by-side comparison of speed before and after enhancement is at the end:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cmr1ncEY43Q?si=nEQdCey1zBf5FS15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Upon reflection, this was a successful week in terms of both implementing skills I have and developing new ones. I was able to improve the controller and view classes as I said I would and the result was improved loading times, particularly for the rescue type radio buttons. I was also able to do incremental programming by creating a Jupyter Notebook for testing, allowing me to ensure that all my changes to animalshelter.py worked as intended. I developed skills in video editing and continued working on improving my code readability and screencasting/code review. I wouldn’t say I faced any major challenges that I wasn’t able to figure out, which made me feel confident in my ability to deliver on what I say I will.
@@ -139,7 +139,7 @@ Upon reflection, this was a successful week in terms of both implementing skills
 [Back to the top](#contents)
 
 # Databases 
-For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons. While simple, this involved controlling input, adding input validation, adding in the calculated fields, and properly updating calculated fields. Some of the methods bleed over into algorithms and data structures as well, specifically the structure of the documents in MongoDB, and adding in calculated fields to each new or updated document. This enhancement helped me to meet the following course outcomes:
+For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons. While simple, this involved controlling input, adding input validation, adding in the calculated fields on insert, and properly updating calculated fields on update. Some of the methods bleed over into algorithms and data structures as well, specifically the structure of the documents in MongoDB, and adding in calculated fields to each new or updated document. This enhancement helped me to meet the following course outcomes:
 
 
 **Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**<br> 
@@ -148,13 +148,13 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
     + Used SingleDatePicker() to ensure user has to select a date for birthdate.
     + Used geolocator to obtain ‘latitude’ and ‘longitude’ coordinates, with a map so the user can confirm their entry.
     + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.
-+ Created __animal_dict() method in CS499_milestone4_dashboard.ipynb to create dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
++ Created __animal_dict() method in the dashboard notebook to create a dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
 + Created private methods in animalshelter.py to fill in the fields that can be calculated.
     + __age() - returns a formatted age string in the form of ‘1 day’, ‘2 weeks’, ‘3 years’, etc. 
     + __age_in_weeks() – returns a float representing the age in weeks calculated from the provided DOB to today.
     + __next_row() – returns highest row value + 1 for newest animal.
     + __next_id() – returns the highest animal_ID value + 1.
-    + __add_fields() – adds calculated fields to animal dictionary to be inserted. This ensures all fields are populated and are in the correct form for the Dash App data table.
+    + __add_fields() – adds calculated fields to animal dictionary to be inserted. This ensures all fields are populated and are in the correct structure for the Dash App data table.
 + Updated insert() method to add all calculated fields prior to checking if animal is a rescue type.
     + Updated update() method to check if a DOB is being updated and doing the appropriate updates if yes.
   
@@ -179,7 +179,7 @@ Video covering changes to the dashboard, followed by the code changes:
 
 In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map in order to properly cite OpenStreetMap. These techniques helped me to ensure strong data validation on input for the MongoDB database. 
 
-My biggest challenge for the enhancement came when I thought I had finished for the week and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard and had everything set up to record the code review, attach to my narrative, and submit. As it turned out, I had not tested as thoroughly as I had thought, my code was riddled with small bugs, and I spent several hours playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how important it is to be thorough and run through all scenarios before declaring the task ‘done’.
+My biggest challenge for the enhancement came when I thought I had finished and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard, but as it turned out, I had not done a thorough job as I had thought. My code was riddled with small bugs, and I had to spend extra time playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how important it is to be thorough and run through all scenarios before declaring the task ‘done’.
 
 
 
