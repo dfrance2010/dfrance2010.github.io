@@ -110,16 +110,22 @@ These changes helped me to meet the following course outcomes:<br>
     + Implemented in update() method – designed algorithm to handle if the animal ID has changed, if only one animal is being updated using animal ID, or if many animals are being updated. __check_rescue_type() is designed to both add and remove rescue_type classifications, of updated animals as necessary.
     + Speed of loading all three rescue types one by one was increased by .47 seconds for a 10,000 animal database.
 + Updated initial load of database into the dashboard to solve the problem of a long initial load time.
-+ Created indexes in MongoDB database to enhance efficiency of find() method.
++ Created indexes in MongoDB database to enhance efficiency of find() method.<br>
+
 **Use well-founded techniques:**<br>
+
 + Separated check for rescue type into its own private method.
     + It doesn’t need to be accessed outside of animalshelter.py.
     + Allows for use in both insert() and update() methods.
-+ Implemented __check_rescue_animal() in update() method to efficiently check all the update possibilities using if-elif-else clause.
++ Implemented __check_rescue_animal() in update() method to efficiently check all the update possibilities using if-elif-else clause.<br>
+
 **Building collaborative environments:**<br>
+
 + Increasing the responsiveness of the database to the data filtering options makes it easier for Grazioso Salvare employees to do their work.
-+ Focused on improving comments within animalshelter.py and CS499_milestone3_dashboard.ipynb in order to allow anyone to jump in and understand the code.
-**Professional communication:**
++ Focused on improving comments within animalshelter.py and CS499_milestone3_dashboard.ipynb in order to allow anyone to jump in and understand the code.<br>
+
+**Professional communication:**<br>
+
 + Increased quality of communication within code with the use of headers, comments, and descriptive naming conventions.
 + Communication within narrative through both written and oral/screencast. Improved layout by using bullets to accentuate important points.
  
