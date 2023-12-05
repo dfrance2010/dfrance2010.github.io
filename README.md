@@ -4,8 +4,9 @@ davidfrance475@gmail.com
 702-373-8115
 
 
-This page hosts my work for the CS-499 capstone project. This project helps demonstrate the computer science technical skills I’ve developed at SNHU. In addition to coursework, my 20 years of high-end experience in the casino and restaurant industries have helped me develop the ability to collaborate in a team environment and communicate to stakeholders. My coursework for this program also demonstrates my ability to take responsibility and hit deadlines in a remote environment. 
+This page hosts my work for the CS-499 capstone project. This project is designed to demonstrate the computer science technical skills I’ve developed at SNHU. Additionally, the coursework and my 20 years of high-end experience in the casino and restaurant industries have helped me develop the abilities to collaborate in a team environment and communicate to stakeholders. My coursework for this program also demonstrates my ability to take responsibility and hit deadlines in a remote environment. 
 <br>
+
 For this project we had to do three enhancements on previous work, covering the following categories:
 <br>
 1.	Software design and engineering
@@ -13,7 +14,7 @@ For this project we had to do three enhancements on previous work, covering the 
 3.	Databases
 <br>
 
-I chose to do all three enhancements on the same artifact – a dashboard for the fictional company, Grazioso Salvare, that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. At the top of the page, you will see the code files pre and post-enhancements. This is followed by a code review prior to starting the work, then the details for each enhancement. For each enhancement, I will go over what changes I made and how those changes helped me meet the following course outcomes:
+I chose to do all three enhancements on the same artifact – a dashboard for the fictional company Grazioso Salvare that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. In the next section, you will see the code files pre and post-enhancements. This is followed by a code review conducted prior to starting the work, including details for each enhancement. For each of the three categories, I will go over what changes I made and how those changes helped me meet the following course outcomes:
 <br>
 
 1. Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science 
@@ -51,7 +52,7 @@ Each enhancement was performed on the same artifact. Here are the original code 
 # Code Review 
 
 
-Youtube video covering my code review prior to adding enhancements for my CS-499 final project:  
+Video covering my code review prior to making any changes, finishing with a review of the planned enhancements:  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76tEqNTcvFA?si=nYg4x87zR1OLd5L2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 [Back to the top](#contents)
@@ -59,15 +60,15 @@ Youtube video covering my code review prior to adding enhancements for my CS-499
 # Software Engineering and Design 
 
 
-For this enhancement, I added a login/logout section, dropdown filters for refining the data in the view, and an 'Advanced Options' section with a 'Delete Animal' button. This all works towards improving the use and functionality of the dashboard for the Grazioso Salvare team. Key elements included creating MongoDB collections for users and salt values, then inserting qualified users and their associated read/write permissions by first salting, then hashing the strings. The login and advanced options also included creating check_user() and check_permission() methods in animalshelter.py for security checks. Finally, an backup database was created to hold deleted animals in to save inattentive users from their mistakes. This enhancement helped me to meet the following course outcomes:
+For this enhancement, I added a login/logout section, dropdown filters for refining the data in the view, and an 'Advanced Options' section with a 'Delete Animal' button. This all works towards improving the use and functionality of the dashboard for the Grazioso Salvare team. Key elements included creating MongoDB collections for users and salt values, then inserting qualified users and their associated read/write permissions by first salting, then hashing the strings. The login and advanced options also included creating check_user() and check_permission() methods in animalshelter.py for security checks. Finally, a backup database was created to hold deleted animal documents to save inattentive users from their mistakes. This enhancement helped me to meet the following course outcomes:
 
 
 **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**<br>
 
-  + Added input and login/logout buttons to the dashboard.
+  + Added login/logout buttons to the dashboard.
   + Created ‘Users’ collection in database.
   + Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
-  + Added check_user() and method to animalshelter.py to check if user has permission to login.
+  + Added check_user() method to animalshelter.py to check if user has permission to login.
   + Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
   + Added login and logout callbacks in grazioso_salvare_dashboard.ipynb. 
 
@@ -90,7 +91,7 @@ Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
 
-The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for a number of reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions have already solved for this, but it was nice to go through the exercise for myself.
+The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for a number of reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions exist, but it was nice to go through the exercise for myself.
 
 
 [Back to the top](#contents)
@@ -106,8 +107,8 @@ These changes helped me to meet the following course outcomes:<br>
 
 **Design and evaluate computing solutions to solve a problem:**<br> 
 + Created __check_rescue_type() private method in animalshelter.py to solve the problem of automatically updating animals as they are inserted and deleted.
-    + Implemented in insert() method – simple call of the __check_rescue_type() method on the animal being inserted
-    + Implemented in update() method – designed algorithm to handle if the animal ID has changed, if only one animal is being updated using animal ID, or if many animals are being updated. __check_rescue_type() is designed to both add and remove rescue_type classifications, of updated animals as necessary.
+    + Implemented in insert() method – simple call of the __check_rescue_type() method on the animal being inserted if it is a dog.
+    + Implemented in update() method – designed algorithm to handle if the animal ID has changed, if only one animal is being updated using animal ID, or if many animals are being updated. __check_rescue_type() is designed to both add and remove rescue_type classifications, of updated dogs as necessary.
     + Speed of loading all three rescue types one by one was increased by .47 seconds for a 10,000 animal database.
 + Updated initial load of database into the dashboard to solve the problem of a long initial load time.
 + Created indexes in MongoDB database to enhance efficiency of find() method.<br>
