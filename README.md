@@ -3,7 +3,7 @@
 davidfrance475@gmail.com  
 702-373-8115
 
-# Introduction – Professional Assessment 
+# Introduction – Self-Assessment 
 When I first enrolled at SNHU, I thought I would cruise to a degree while learning a few cool things along the way. It has proven to be much more challenging than just showing up, with a near non-stop flow of reading, learning, communication, design, writing, and coding, all while working in a remote environment. Along the way, I have developed a variety of skills in computer science, as well as expanded my knowledge of communication and collaboration.<br>
 
 In respect to computer science, I have both learned theoretical and practical skills, as well as seeing how they blend. I have learned about the software development lifecycle, particularly as it applies to Agile methodology, both in theory and in practice. Each week is like a new sprint. While my following project is in Python, I have gained a solid grounding in C++ and Java; and I would be comfortable learning any new language. I have also had the opportunity to work in a variety of SQL and NoSQL databases.<br>
@@ -64,6 +64,9 @@ Each enhancement was performed on the same artifact. Here are the original code 
 Video covering my code review prior to making any changes, finishing with a review of the planned enhancements:  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76tEqNTcvFA?si=nYg4x87zR1OLd5L2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+<br>
+
+[Enhancement overview PowerPoint]{'https://github.com/dfrance2010/CS499/blob/main/CS499_france_david_code_review_enhancements.pdf')
 [Back to the top](#contents)
 
 # Software Engineering and Design 
