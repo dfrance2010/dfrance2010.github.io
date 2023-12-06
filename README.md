@@ -66,7 +66,7 @@ Video covering my code review prior to making any changes, finishing with a revi
 <iframe width="560" height="315" src="https://www.youtube.com/embed/76tEqNTcvFA?si=nYg4x87zR1OLd5L2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 <br>
 
-[Enhancement overview PowerPoint]{https://github.com/dfrance2010/CS499/blob/main/CS499_france_david_code_review_enhancements.pdf)
+[Enhancement overview PowerPoint](https://github.com/dfrance2010/CS499/blob/main/CS499_france_david_code_review_enhancements.pdf)
 [Back to the top](#contents)
 
 # Software Engineering and Design 
