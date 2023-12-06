@@ -7,6 +7,15 @@ davidfrance475@gmail.com
 This page hosts my work for the CS-499 capstone project. This project is designed to demonstrate the computer science technical skills I’ve developed at SNHU. Additionally, the coursework and my 20 years of high-end experience in the casino and restaurant industries have helped me develop the abilities to collaborate in a team environment and communicate to stakeholders. My coursework for this program also demonstrates my ability to take responsibility and hit deadlines in a remote environment. 
 <br>
 
+### Contents
+1. [Overview](#overview)
+2. [Files](#files)
+3. [Code Review](#code-review)
+4. [Software Engineering and Design](#software-engineering-and-design)
+5. [Data Structures and Algorithms](#data-structures-and-algorithms)
+6. [Databases](#databases)
+
+# Overview
 For this project we had to do three enhancements on previous work, covering the following categories:
 <br>
 1.	Software design and engineering
@@ -27,13 +36,6 @@ I chose to do all three enhancements on the same artifact – a dashboard for th
 
 Following that, I have a video showcasing the changes in the dashboard, along with a quick review of the code. Closing out each section will be a short reflection on what I learned and what challenges I faced in completing the enhancement.
 
-
-### Contents
-1. [Files](#files)
-2. [Code Review](#code-review)
-3. [Software Engineering and Design](#software-engineering-and-design)
-4. [Data Structures and Algorithms](#data-structures-and-algorithms)
-5. [Databases](#databases)
 
 # Files
 Each enhancement was performed on the same artifact. Here are the original code files, followed by the files after all enhancements. Each section goes over what I specifically changed for that enhancement.
