@@ -4,7 +4,14 @@ davidfrance475@gmail.com
 702-373-8115
 
 
-This page hosts my work for the CS-499 capstone project. This project is designed to demonstrate the computer science technical skills I’ve developed at SNHU. Additionally, the coursework and my 20 years of high-end experience in the casino and restaurant industries have helped me develop the abilities to collaborate in a team environment and communicate to stakeholders. My coursework for this program also demonstrates my ability to take responsibility and hit deadlines in a remote environment. 
+When I first enrolled at SNHU, I thought I would cruise to a degree while learning a few cool things along the way. It has proven to be much more challenging than just showing up, with a near non-stop flow of reading, learning, communication, design, writing, and coding, all while working in a remote environment. Along the way, I have developed a variety of skills in computer science, as well as expanded my knowledge of communication and collaboration.<br>
+
+In respect to computer science, I have both learned theoretical and practical skills, as well as seeing how they blend. I have learned about the software development lifecycle, particularly as it applies to Agile methodology, both in theory and in practice. Each week is like a new sprint. While my following project is in Python, I have gained a solid grounding in C++ and Java; and I would be comfortable learning any new language. I have also had the opportunity to work in a variety of SQL and NoSQL databases.<br>
+
+In terms of collaborating in a team environment and communicating with stakeholders, I’ve worked the past 20 years in the casino and restaurant industries, including the last ten at a Forbes Five Star resort in Las Vegas. Not only have I had to work as a team in a wide variety of circumstances, including watching millions of dollars won and lost in a matter of minutes, I have had the chance to develop communication skills across language and cultural barriers. I have given presentations to top company executives and had to coach employees who have been in the business decades longer than me. During Covid, I had the rare opportunity to tell guests with hundreds of thousands of dollars in play to please pull their mask up.<br>
+
+One final skill I’ve developed over the years, starting with being a paperboy as a teenager, is the value of hard work. I’ve worked eight straight hours waiting tables on Mother’s Day, seven straight 12 hour shifts over Christmas/New Year’s week, and in all my spare time to complete this degree as fast as possible. While I don’t want to invite getting taken advantage of – I won’t – I do know when and how to put my head down and get the job done.
+
 <br>
 
 ### Contents
