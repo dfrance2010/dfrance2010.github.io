@@ -71,23 +71,27 @@ Video covering my code review prior to making any changes, finishing with a revi
 # Software Engineering and Design 
 
 
-For this enhancement, I added a login/logout section, dropdown filters for refining the data in the view, and an 'Advanced Options' section with a 'Delete Animal' button. This all works towards improving the use and functionality of the dashboard for the Grazioso Salvare team. Key elements included creating MongoDB collections for users and salt values, then inserting qualified users and their associated read/write permissions by first salting, then hashing the strings. The login and advanced options also included creating check_user() and check_permission() methods in animalshelter.py for security checks. Finally, a backup database was created to hold deleted animal documents to save inattentive users from their mistakes. This enhancement helped me to meet the following course outcomes:
+For this enhancement, I added a login/logout section, dropdown filters for refining the data in the view, and an 'Advanced Options' section with a 'Delete Animal' button. This all works towards improving the use and functionality of the dashboard for the Grazioso Salvare team.<br>
+
+This involved creating a MongoDB collection for users and a seperate database for salt values, then inserting qualified users and their associated read/write permissions by first salting, then hashing the strings. The login and advanced options also included creating check_user() and check_permission() methods in animalshelter.py for security checks. Finally, a backup database was created to hold deleted animal documents to save inattentive users from their mistakes. This enhancement helped me to meet the following course outcomes:
 
 
 **Use well-founded techniques, skills, and tools for implementing computing solutions that deliver value and accomplish industry-specific goals**<br>
 
   + Added login/logout buttons to the dashboard.
+      + Added login and logout callbacks in grazioso_salvare_dashboard.ipynb.
+      + Added check_user() method to animalshelter.py to check if user has permission to login.
   + Created ‘Users’ collection in database.
-  + Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings are hashed using hashlib’s SHA-256 algorithm.
-  + Added check_user() method to animalshelter.py to check if user has permission to login.
+  + Used hashlib library to add in username/password pairs and their associated read/write permissions. Strings were salted, then hashed using hashlib’s SHA-256 algorithm.
   + Added check_permission() method to animalshelter.py to check a user’s read/write permission to access ‘Advanced Options’.
-  + Added login and logout callbacks in grazioso_salvare_dashboard.ipynb. 
+  + Provided dropdowns for filtering to limit user input.
 
 **Develop a security mindset to mitigate design flaws and ensure privacy and enhanced security of data and resources**<br>  
 
-+ Principle of least privilege means only users with read/write access can make changes to the database.
 + Salting and hashing username/password pairs protects the stored values even if they are accessed.
++ Principle of least privilege means only users with read/write access can make changes to the database.
 + Creating methods for checking users and permissions prevents unauthorized access.
++ Limiting user input on the filters guards against injection attacks.
     
 **Build collaborative environments that enable diverse audiences to support organizational decision making**<br>
 
@@ -102,7 +106,7 @@ Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
 
-The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for several reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions exist, but it was nice to go through the exercise for myself.
+The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding HTML elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App HTML component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions exist, but it was nice to go through the exercise for myself.
 
 
 [Back to the top](#contents)
