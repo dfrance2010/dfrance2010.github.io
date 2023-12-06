@@ -47,13 +47,11 @@ Following that, I have a video showcasing the changes in the dashboard, along wi
 # Files
 Each enhancement was performed on the same artifact. Here are the original code files, followed by the files after all enhancements. Each section goes over what I specifically changed for that enhancement.
 
-**Files prior to enhancement:**<br> 
-
+**Orginal files:**<br> 
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)   
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)  
 
 **Files after enhancement:**<br> 
-
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Final/animalshelter.py)  
 [dash_css.py](https://github.com/dfrance2010/CS499/blob/Final/dash_css.py)  
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Final/grazioso_salvare_dashboard.ipynb)
