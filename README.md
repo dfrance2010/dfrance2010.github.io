@@ -112,9 +112,9 @@ The process of enhancing/modifying the artifact was an interesting one. I felt l
 [Back to the top](#contents)
 
 # Data Structures and Algorithms
-For this enhancement I focused on improving the speed of the dashboard. I accomplished this by improving the dashboard in three ways:
+For this enhancement I focused on improving the speed of the dashboard. I accomplished this by improving the dashboard the following ways:
++ **Create ‘rescue_type’ category for dogs in MongoDB** - this is one of the main functions of the dashboard, so was a focus for this enhancement. For the current database, this meant updating dogs that currently meet the criteria for each rescue type, accounting for the fact that some dogs are in more than one category. More importantly, it meant creating an algorithm in animalshelter.py to automatically update dogs that qualify, or are disqualified, as they are inserted or updated within the database.
 + **Initial load time** – I updated the initial database query to find only dogs, rather than the entire set, to populate the data table. Dogs are the focus of the business, but users can then load additional animals, or the entire set, if they like.
-+ **Create ‘rescue_type’ category for dogs in MongoDB** - for the current database, this meant updating dogs that currently meet the criteria for each rescue type, accounting for the fact that some dogs are in more than one category. More importantly, it meant creating an algorithm in animalshelter.py to automatically update dogs that qualify as they are inserted or updated within the database.
 + **Create indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.
 
 
@@ -124,7 +124,7 @@ These changes helped me to meet the following course outcomes:<br>
 + Created __check_rescue_type() private method in animalshelter.py to solve the problem of automatically updating animals as they are inserted and deleted.
     + Implemented in insert() method – simple call of the __check_rescue_type() method on the animal being inserted if it is a dog.
     + Implemented in update() method – designed algorithm to handle if the animal ID has changed, if only one animal is being updated using animal ID, or if many animals are being updated. __check_rescue_type() is designed to both add and remove rescue_type classifications, of updated dogs as necessary.
-    + Speed of loading all three rescue types one by one was increased by .47 seconds for a 10,000-animal database.
+    + Time complexity of rescue animal search went from O(n) to O(1). The speed of loading all three rescue types one by one was decreased by .47 seconds for a 10,000-animal database.
 + Updated initial load of database into the dashboard to solve the problem of a long initial load time.
 + Created indexes in MongoDB database to enhance efficiency of find() method.<br>
 
