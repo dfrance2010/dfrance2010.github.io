@@ -3,7 +3,7 @@
 davidfrance475@gmail.com  
 702-373-8115
 
-
+# Introduction – Professional Assessment 
 When I first enrolled at SNHU, I thought I would cruise to a degree while learning a few cool things along the way. It has proven to be much more challenging than just showing up, with a near non-stop flow of reading, learning, communication, design, writing, and coding, all while working in a remote environment. Along the way, I have developed a variety of skills in computer science, as well as expanded my knowledge of communication and collaboration.<br>
 
 In respect to computer science, I have both learned theoretical and practical skills, as well as seeing how they blend. I have learned about the software development lifecycle, particularly as it applies to Agile methodology, both in theory and in practice. Each week is like a new sprint. While my following project is in Python, I have gained a solid grounding in C++ and Java; and I would be comfortable learning any new language. I have also had the opportunity to work in a variety of SQL and NoSQL databases.<br>
