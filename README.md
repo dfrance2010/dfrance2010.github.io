@@ -14,7 +14,7 @@ For this project we had to do three enhancements on previous work, covering the 
 3.	Databases
 <br>
 
-I chose to do all three enhancements on the same artifact – a dashboard for the fictional company Grazioso Salvare that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. In the next section, you will see the code files pre and post-enhancements. This is followed by a code review conducted prior to starting the work, including details for each enhancement. For each of the three categories, I will go over what changes I made and how those changes helped me meet the following course outcomes:
+I chose to do all three enhancements on the same artifact – a dashboard for the fictional company Grazioso Salvare that allows their team members to interact with the Austin Animal Shelter database. This database holds information on a variety of animals in their system. In the next section, you will see the code files pre- and post-enhancements. This is followed by a code review conducted prior to starting the work, including details for each enhancement. For each of the three categories, I will go over what changes I made and how those changes helped me meet the following course outcomes:
 <br>
 
 1. Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science 
@@ -32,13 +32,13 @@ Following that, I have a video showcasing the changes in the dashboard, along wi
 1. [Files](#files)
 2. [Code Review](#code-review)
 3. [Software Engineering and Design](#software-engineering-and-design)
-4. [Data Structures and Algorihtms](#data-structures-and-algorithms)
+4. [Data Structures and Algorithms](#data-structures-and-algorithms)
 5. [Databases](#databases)
 
 # Files
 Each enhancement was performed on the same artifact. Here are the original code files, followed by the files after all enhancements. Each section goes over what I specifically changed for that enhancement.
 
-**Files prior to enchancement:**<br> 
+**Files prior to enhancement:**<br> 
 
 [animalshelter.py](https://github.com/dfrance2010/CS499/blob/Original/animalshelter.py)   
 [Grazioso Salvare Dashboard](https://github.com/dfrance2010/CS499/blob/Original/CS340_project2_dashboard.ipynb)  
@@ -91,7 +91,7 @@ Video review of enhancements and code:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3_wODRyI810?si=kqjH7rnyJo2qPTV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
 
-The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for a number of reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions exist, but it was nice to go through the exercise for myself.
+The process of enhancing/modifying the artifact was an interesting one. I felt like I was both doing things I already knew, but also learning new things the whole time. On the one hand, adding html elements and creating callbacks are something I’ve done, but it seems like it’s never that simple. For instance, lining up the filter dropdowns took longer than expected to find the syntax that applies to a Dash App html component. I also got side-tracked with the login function, as I found a few different good options, including Dash App Enterprise, dash_bootstrap_components, and dash_mantine_components. They all proved to not work the way I wanted for several reasons, so I ended up just creating the whole thing from scratch. In the end, I was happy with the experience of having to figure out these solutions, particularly creating my own security for the login. I know enterprise solutions exist, but it was nice to go through the exercise for myself.
 
 
 [Back to the top](#contents)
@@ -109,7 +109,7 @@ These changes helped me to meet the following course outcomes:<br>
 + Created __check_rescue_type() private method in animalshelter.py to solve the problem of automatically updating animals as they are inserted and deleted.
     + Implemented in insert() method – simple call of the __check_rescue_type() method on the animal being inserted if it is a dog.
     + Implemented in update() method – designed algorithm to handle if the animal ID has changed, if only one animal is being updated using animal ID, or if many animals are being updated. __check_rescue_type() is designed to both add and remove rescue_type classifications, of updated dogs as necessary.
-    + Speed of loading all three rescue types one by one was increased by .47 seconds for a 10,000 animal database.
+    + Speed of loading all three rescue types one by one was increased by .47 seconds for a 10,000-animal database.
 + Updated initial load of database into the dashboard to solve the problem of a long initial load time.
 + Created indexes in MongoDB database to enhance efficiency of find() method.<br>
 
@@ -134,7 +134,7 @@ These changes helped me to meet the following course outcomes:<br>
 Video review of enhancements and code. Side-by-side comparison of speed before and after enhancement is at the end:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cmr1ncEY43Q?si=nEQdCey1zBf5FS15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Upon reflection, this was a successful week in terms of both implementing skills I have and developing new ones. I was able to improve the controller and view classes as I said I would and the result was improved loading times, particularly for the rescue type radio buttons. I was also able to do incremental programming by creating a Jupyter Notebook for testing, allowing me to ensure that all my changes to animalshelter.py worked as intended. I developed skills in video editing and continued working on improving my code readability and screencasting/code review. I wouldn’t say I faced any major challenges that I wasn’t able to figure out, which made me feel confident in my ability to deliver on what I say I will.
+Upon reflection, this was a successful week in terms of both implementing skills I have and developing new ones. I was able to improve the controller and view classes as I said I would and the result was improved loading times, particularly for the rescue type radio buttons. I was also able to do incremental programming by creating a Jupyter Notebook for testing, allowing me to ensure that all my changes to animalshelter.py worked as intended. I developed skills in video editing and continued working on improving my code readability and screen casting/code review. I wouldn’t say I faced any major challenges that I wasn’t able to figure out, which made me feel confident in my ability to deliver on what I say I will.
 
 [Back to the top](#contents)
 
@@ -177,9 +177,9 @@ Video covering changes to the dashboard, followed by the code changes:
 
 
 
-In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map in order to properly cite OpenStreetMap. These techniques helped me to ensure strong data validation on input for the MongoDB database. 
+In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map to properly cite OpenStreetMap. These techniques helped me to ensure strong data validation on input for the MongoDB database. 
 
-My biggest challenge for the enhancement came when I thought I had finished and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard, but as it turned out, I had not done a thorough job as I had thought. My code was riddled with small bugs, and I had to spend extra time playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how important it is to be thorough and run through all scenarios before declaring the task ‘done’.
+My biggest challenge for the enhancement came when I thought I had finished and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard, but as it turned out, I had not done as thorough job as I had thought. My code was riddled with small bugs, and I had to spend extra time playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how important it is to be thorough and run through all scenarios before declaring the task ‘done’.
 
 
 
