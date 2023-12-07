@@ -190,7 +190,7 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
 
 Video covering changes to the dashboard, followed by the code changes:
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5YPjcO843c?si=-n-VTVQCPIW2HL-5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map to properly cite OpenStreetMap. These techniques helped me to ensure strong data validation on input for the MongoDB database. 
 
