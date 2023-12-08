@@ -41,7 +41,12 @@ I chose to do all three enhancements on the same artifact – a dashboard for th
 <br>
 
 
-Following that, I have a video showcasing the changes in the dashboard, along with a quick review of the code. Closing out each section will be a short reflection on what I learned and what challenges I faced in completing the enhancement.
+Following that, I have a video showcasing the changes in the dashboard, along with a quick review of the code. Closing out each section will be a short reflection on what I learned and what challenges I faced in completing the enhancement.<br>
+
+The following videos detail the Grazioso Salvare Dashboard when I first completed it for the previous class (3:00) and after all enhancements were completed (5:13):
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tJ9KHwAtOHk?si=3vXsGjLaXtsSy_eR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9XKuFd2OafA?si=vprBBI4Gux4Op9Hx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 # Files
@@ -113,9 +118,9 @@ The process of enhancing/modifying the artifact was an interesting one. I felt l
 
 # Data Structures and Algorithms
 For this enhancement I focused on improving the speed of the dashboard. I accomplished this by improving the dashboard the following ways:
-+ **Create ‘rescue_type’ category for dogs in MongoDB** - this is one of the main functions of the dashboard, so was a focus for this enhancement. For the current database, this meant updating dogs that currently meet the criteria for each rescue type, accounting for the fact that some dogs are in more than one category. More importantly, it meant creating an algorithm in animalshelter.py to automatically update dogs that qualify, or are disqualified, as they are inserted or updated within the database.
-+ **Initial load time** – I updated the initial database query to find only dogs, rather than the entire set, to populate the data table. Dogs are the focus of the business, but users can then load additional animals, or the entire set, if they like.
-+ **Create indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.
++ **Created ‘rescue_type’ category for dogs in MongoDB** - this is one of the main functions of the dashboard, so was a focus for this enhancement. For the current database, this meant updating dogs that currently meet the criteria for each rescue type, accounting for the fact that some dogs are in more than one category. More importantly, it meant creating an algorithm in animalshelter.py to automatically update dogs that qualify, or are disqualified, as they are inserted or updated within the database. The previous method included searches across all animals on multiple categories for MongoDB, this simplified the search to just 'rescue_type' and 'age_upon_outcome_in_weeks'.
++ **Improved initial load time** – I updated the initial database query to find only dogs, rather than the entire set, to populate the data table. Dogs are the focus of the business, but users can then load additional animals, or the entire set, if they like.
++ **Created indexes in MongoDB AAC database for the filter categories** – this was a database administrator task to make the most common queries more efficient.
 
 
 These changes helped me to meet the following course outcomes:<br>
@@ -138,7 +143,7 @@ These changes helped me to meet the following course outcomes:<br>
 **Building collaborative environments:**<br>
 
 + Increasing the responsiveness of the database to the data filtering options makes it easier for Grazioso Salvare employees to do their work.
-+ Focused on improving comments within animalshelter.py and CS499_milestone3_dashboard.ipynb in order to allow anyone to jump in and understand the code.<br>
++ Focused on improving comments within animalshelter.py and grazioso_salvare_dashboard.ipynb in order to allow anyone to jump in and understand the code.<br>
 
 **Professional communication:**<br>
 
@@ -146,22 +151,22 @@ These changes helped me to meet the following course outcomes:<br>
 + Communication within narrative through both written and oral/screencast. Improved layout by using bullets to accentuate important points.
  
 
-Video review of enhancements and code. Side-by-side comparison of speed before and after enhancement is at the end:
+Video review of enhancements and code. Skp to the end for a side-by-side comparison of speed before and after enhancement:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cmr1ncEY43Q?si=nEQdCey1zBf5FS15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Upon reflection, this was a successful week in terms of both implementing skills I have and developing new ones. I was able to improve the controller and view classes as I said I would and the result was improved loading times, particularly for the rescue type radio buttons. I was also able to do incremental programming by creating a Jupyter Notebook for testing, allowing me to ensure that all my changes to animalshelter.py worked as intended. I developed skills in video editing and continued working on improving my code readability and screen casting/code review. I wouldn’t say I faced any major challenges that I wasn’t able to figure out, which made me feel confident in my ability to deliver on what I say I will.
+Upon reflection, this was a successful enhancement in terms of both implementing skills I have and developing new ones. I was able to improve the controller and view classes as I said I would and the result was improved loading times, particularly for the rescue type radio buttons. I was also able to do incremental programming by creating a Jupyter Notebook for testing, allowing me to ensure that all my changes to animalshelter.py worked as intended. I developed skills in video editing and continued working on improving my code readability and screen casting/code review. I wouldn’t say I faced any major challenges that I wasn’t able to figure out, which made me feel confident in my ability to deliver on what I say I will.
 
 [Back to the top](#contents)
 
 # Databases 
-For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons. While simple, this involved controlling input, adding input validation, adding in the calculated fields on insert, and properly updating calculated fields on update. Some of the methods bleed over into algorithms and data structures as well, specifically the structure of the documents in MongoDB, and adding in calculated fields to each new or updated document. This enhancement helped me to meet the following course outcomes:
+For this enhancement, I completed the CRUD functionality of the dashboard by adding 'Create Animal' and 'Update Animal' buttons. While seemingly simple, this involved controlling input, adding input validation, adding in the calculated fields on insert, and properly updating calculated fields on update. Some of the methods bleed over into algorithms and data structures as well, specifically the structure of the documents in MongoDB, and adding in calculated fields to each new or updated document. This enhancement helped me to meet the following course outcomes:
 
 
 **Use well founded techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value:**<br> 
 + Used data validation to ensure only quality data was being inserted/updated. 
     + Created dropdown menus with pre-selected values for ‘animal_type’, ‘breed’, ‘color’, ‘outome_subtype’, ‘outcome_type’, and ‘sex_upon_outcome’
-    + Used SingleDatePicker() to ensure user has to select a date for birthdate.
-    + Used geolocator to obtain ‘latitude’ and ‘longitude’ coordinates, with a map so the user can confirm their entry.
+    + Used SingleDatePicker() and private method __check_date() to ensure user has to select a date for birthdate.
+    + Used Nominatim class from geopy.geocoder library to obtain ‘latitude’ and ‘longitude’ coordinates from address, with a map so the user can confirm their entry.
     + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.
 + Created __animal_dict() method in the dashboard notebook to create a dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
 + Created private methods in animalshelter.py to fill in the fields that can be calculated.
@@ -171,30 +176,30 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
     + __next_id() – returns the highest animal_ID value + 1.
     + __add_fields() – adds calculated fields to animal dictionary to be inserted. This ensures all fields are populated and are in the correct structure for the Dash App data table.
 + Updated insert() method to add all calculated fields prior to checking if animal is a rescue type.
-    + Updated update() method to check if a DOB is being updated and doing the appropriate updates if yes.
++ Updated update() method to check if a DOB is being updated and doing the appropriate updates if yes.
   
    
 **Develop a security mindset:**<br>  
 + Only users with read/write permissions can access the ‘Advanced Options’ on the dashboard, showing the use of the principle of least privilege. 
-+ Data validation protects against injection attacks.
++ Data control and validation protects against injection attacks.
  
 **Building collaborative environments:**<br>
 + Creating a dashboard with complete CRUD functionality allows for all team members of Grazioso Salvare to work with the most up-to-date information available from the database.
-+ ‘Advanced Option’ are only shown when read/write users click on the ‘Show Advanced Option’ button. This declutters the view for those just using the read functionality of the dashboard. Further, only one ‘delete’, ‘insert’, or ‘update’ view is available at a time, based on the selected radio button.
++ ‘Advanced Option’ are only shown when read/write users click on the ‘Show Advanced Option’ button. Further, only one ‘delete’, ‘insert’, or ‘update’ view is available at a time, based on the selected radio button. This declutters the view for those just using the read functionality of the dashboard.
 + Ensured to comment the code and use descriptive naming to make it easier for other developers to work with my code.
 
     
 **Professional communication:**<br>  
-  + Use of bullets and screencast in narrative to clearly highlight enhancement using both written and oral/visual techniques
+  + Used both narrative and screencast to clearly highlight enhancement using both written and oral/visual techniques
 
 
 Video covering changes to the dashboard, followed by the code changes:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q5YPjcO843c?si=-n-VTVQCPIW2HL-5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map to properly cite OpenStreetMap. These techniques helped me to ensure strong data validation on input for the MongoDB database. 
+In reflecting on my experience with this enhancement, I was able to continue to learn about Dash Apps and Python, while employing many of the techniques I’ve learned while at SNHU. In Dash, I learned about the SingleDatePicker() input option, which allows for picking a date from a calendar for input. In Python, I learned about the Nominatim class from geopy.geocoders, which allows for returning map-data from an address. Within that scope, I also learned how to add an attribute to a dash-leaflet map to properly cite OpenStreetMap. These Python elements helped me to ensure strong data validation on input for the MongoDB database. 
 
-My biggest challenge for the enhancement came when I thought I had finished and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard, but as it turned out, I had not done as thorough job as I had thought. My code was riddled with small bugs, and I had to spend extra time playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how important it is to be thorough and run through all scenarios before declaring the task ‘done’.
+My biggest challenge for the enhancement came when I thought I had finished and just had the screencast to wrap up. I thought I had sufficiently tested my dashboard, but as it turned out, I had not done as thorough job as I had thought. My code was riddled with small bugs, and I had to spend extra time playing whack-a-mole trying to get everything in order. I already knew the importance of testing, but this hammered home how critical it is to be thorough and run through all scenarios before declaring the task ‘done’.
 
 
 
