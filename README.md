@@ -10,8 +10,6 @@ In respect to computer science, I have both learned theoretical and practical sk
 
 In terms of collaborating in a team environment and communicating with stakeholders, I’ve worked the past 20 years in the casino and restaurant industries, including the last ten at a Forbes Five Star resort in Las Vegas. Not only have I had to work as a team in a wide variety of circumstances, including watching millions of dollars won and lost in a matter of minutes, I have had the chance to develop communication skills across language and cultural barriers. I have given presentations to top company executives and had to coach employees who have been in the business decades longer than me. During Covid, I had the rare opportunity to tell guests with hundreds of thousands of dollars in play to please pull their mask up. This is all led to me understanding the importance of clear communication, while taking the audience into consideration.<br>
 
-One final skill I’ve developed over the years, starting with being a paperboy as a teenager, is the value of hard work. I’ve worked eight straight hours waiting tables on Mother’s Day, seven straight 12 hour shifts over Christmas/New Year’s week, and in all my spare time to complete this degree as fast as possible. While I won’t get taken advantage of, I do know when and how to put my head down and get the job done.<br>
-
 The following is my final project for the CS-499 capstone project. I will summarize the project in the overview, provide a code review, then go over each section in turn. It is a ten minute read with about an hour of optional videos.<br>
 
 ### Contents
