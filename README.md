@@ -12,7 +12,7 @@ In terms of collaborating in a team environment and communicating with stakehold
 
 One final skill I’ve developed over the years, starting with being a paperboy as a teenager, is the value of hard work. I’ve worked eight straight hours waiting tables on Mother’s Day, seven straight 12 hour shifts over Christmas/New Year’s week, and in all my spare time to complete this degree as fast as possible. While I won’t get taken advantage of, I do know when and how to put my head down and get the job done.<br>
 
-The following is my final project for the CS-499 capstone project. I will summarize the project, provide a code review, then go over each section in turn. It is a ten minute read with about an hour of optional videos.<br>
+The following is my final project for the CS-499 capstone project. I will summarize the project in the overview, provide a code review, then go over each section in turn. It is a ten minute read with about an hour of optional videos.<br>
 
 ### Contents
 1. [Overview](#overview)
@@ -167,6 +167,7 @@ For this enhancement, I completed the CRUD functionality of the dashboard by add
     + Created dropdown menus with pre-selected values for ‘animal_type’, ‘breed’, ‘color’, ‘outome_subtype’, ‘outcome_type’, and ‘sex_upon_outcome’
     + Used SingleDatePicker() and private method __check_date() to ensure user has to select a date for birthdate.
     + Used Nominatim class from geopy.geocoder library to obtain ‘latitude’ and ‘longitude’ coordinates from address, with a map so the user can confirm their entry.
+    + Created check_address() callback to allow users to confirm their address on a map.
     + Created name_validation() method in animalshelter.py to ensure ‘name’ does not exceed 15 characters, and only contains letters, ‘*’, ‘-‘, or ‘ ‘ characters.
 + Created __animal_dict() method in the dashboard notebook to create a dictionary based on insert/update values to be passed to AnimalShelter() class. This method is used in both create_animal() and update_animal() callbacks.
 + Created private methods in animalshelter.py to fill in the fields that can be calculated.
