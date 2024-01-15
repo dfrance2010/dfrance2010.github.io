@@ -1,6 +1,6 @@
 ---
 title: Computational Graphics
-layout: template
+layout: jekyll-theme-cayman
 filename: compuational_graphics.md
 --- 
 
