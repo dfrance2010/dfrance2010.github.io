@@ -4,4 +4,4 @@ layout: jekyll-theme-cayman
 filename: compuational_graphics.md
 --- 
 
-#Computational Graphics Page
+# Computational Graphics Page
