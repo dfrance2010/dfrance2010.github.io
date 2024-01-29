@@ -1,7 +1,4 @@
 ## David France
-**Contact:**<br>
-davidfrance475@gmail.com  
-702-373-8115
 
 # Introduction – Self-Assessment 
 When I first enrolled at SNHU, I thought I would cruise to a degree while learning a few cool things along the way. It has proven to be much more challenging than just showing up, with a near non-stop flow of reading, learning, communication, design, writing, and coding, all while working in a remote environment. Along the way, I have developed a variety of skills in computer science, as well as expanded my knowledge of communication and collaboration.<br>
